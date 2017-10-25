@@ -2,8 +2,10 @@ package hipster.controller;
 
 public class HipsterController
 {
-	private int[] numbers;
-	private String[] words;
+	private int [] numbers;
+	private String [] words;
+	private String [] words2 = {"Test", "Test2", "Test3", "Test4"};
+	private String [] words3;
 	
 	public void start()
 	{
@@ -12,7 +14,7 @@ public class HipsterController
 	
 	private void fillArrays()
 	{
-		numbers = new int[7];
+		numbers = new int [7];
 		numbers[0] = 2;
 		numbers[1] = 3;
 		numbers[2] = 5;
@@ -32,7 +34,7 @@ public class HipsterController
 			System.out.println("The number at index " + index + " is " + numbers[index]);
 		}
 		
-		words = new String[7];
+		words = new String [7];
 		words[0] = "Testing1";
 		words[1] = "Testing2";
 		words[2] = "Testing3";
@@ -45,5 +47,7 @@ public class HipsterController
 		{
 			System.out.println("The string at index " + index + " is " + words[index]);
 		}
+		
+		words3 = new String [] {"TestTest1", "TestTest2", "TestTest3", "TestTest4"};
 	}
 }
